@@ -26,6 +26,12 @@
       "description": "this is to test programmatic navigation",
       "userId": "107857501524401324620",
       "id": 5
+    },
+    {
+      "title": "sixth stream",
+      "description": "test out refactored create stream component",
+      "userId": "107857501524401324620",
+      "id": 6
     }
   ]
 }
