@@ -1,0 +1,20 @@
+.logo {
+    float: left;
+    font-size: X-large;
+}
+
+.auth {
+    float: right
+}
+
+.streamlist {
+    margin-top: 70px
+}
+
+.streamEdit {
+    margin-top: 70px
+}
+
+.streamCreate {
+    margin-top: 70px
+}

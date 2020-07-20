@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import '../App.css';
 
 class StreamForm extends React.Component {
     renderError(meta) {
@@ -29,7 +30,7 @@ class StreamForm extends React.Component {
 
     render() {
         return (
-            <form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
+            <form className="ui container big form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
                 <Field name="title" component={this.renderInput} label="Enter Title:" />
                 <Field name="description" component={this.renderInput} label="Enter Description:"/>
                 <button className="ui button primary">Submit</button>
