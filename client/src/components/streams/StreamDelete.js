@@ -15,8 +15,14 @@ class StreamDelete extends React.Component {
 
         return (
             <React.Fragment>
-                <Link to='/'  className="ui button primary">No</Link>
-                <button onClick={() => this.props.deleteStream(id)} className="ui button negative">Yes</button>
+                <Link to='/'  className="ui red basic cancel inverted button">
+                    <i className="remove icon"></i>
+                    No
+                </Link>
+                <button onClick={() => this.props.deleteStream(id)} className="ui green ok inverted button">
+                    <i className="checkmark icon"></i>
+                    Yes
+                </button>
             </React.Fragment>
         );
     }
@@ -27,7 +33,7 @@ class StreamDelete extends React.Component {
         }
     
         return (
-            `Are you sure you want to delete the stream with title: ${this.props.stream.title}`
+            `Are you sure you want to delete ${this.props.stream.title}`
         );
       }
 
